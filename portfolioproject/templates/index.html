@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% include 'cdnlines.html' %}
+    {% include 'navbar.html' %}
+    <title>Portfolio WebSite</title>
+    </style>
+    </head>
+  <body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <h1><span class="a">Rohit</span> Portfolio</h1>
+              <ul id="sidemenu">
+                <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+              <div class="header-text">
+                <h1>Hii, I'm <span>Rohit</span></h1>
+                <h2>• I'm A Python Full Stack Developer</h2>
+                <h4>• Python  • Django  • UI - Developer</h4>
+              </div>
+        </div>
+    </div>
+  </body>
+</html>

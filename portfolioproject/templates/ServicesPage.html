@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    {% include 'navbar.html' %}
+    <title>Portfolio WebSite</title>
+  </head>
+  <body>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span class="a1">• My Projects</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="{% static 'img/portfolioB.png' %}" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Design WebPage</h3>
+                        <a href="https://rohit-nawale-personanl-portfolio-web.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="{% static 'img/live analog clock.png' %}" alt="">
+                    <div class="layer">
+                        <h3>Live Analog Clock WebPage</h3>
+                        <a href="https://rohitn-live-analog-clock-webpage.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+              <div class="work">
+                    <img src="{% static 'img/NetFlexClone.png' %}" alt="">
+                    <div class="layer">
+                        <h3>NetFlex Clone WebSite WebPage</h3>
+                        <a href="https://rohitn-netflex-clone-website.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://rohitn-all-webpage-website.netlify.app/" class="btn">See More</a>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>copyright © 2023, Made With <i class="fas fa-heart"></i> By <span class="a1">Rohit</span></p>
+    </div>
+  </body>
+</html>

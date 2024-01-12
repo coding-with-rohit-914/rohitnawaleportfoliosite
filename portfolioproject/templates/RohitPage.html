@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    {% include 'navbar.html' %}
+    <title>Portfolio WebSite</title>
+    <style media="screen">
+       .RP{
+         height: 400px;
+       }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">• Welcome To My <span class="a1">Portfolio</span> WebSite •</h1>
+    <p  class="text-center">• This Portfolio Website Is Create with Python, DJango, Html, Css, Bootstrap, JavaScript...</p>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="about-col-1">
+              <img class="RP" src="{% static 'img/R3.png' %}" alt="">
+          </div>
+          <div class="col-md-5 mt-5">
+            <h3 class="text-success">• View More Project in GitHub</h3>
+            <p class="text-secondary">In GitHub Share Multiple WebPage, Game, Apps With Source Code</p>
+            <div class="social-icon text-left">
+                <a href="https://github.com/coding-with-rohit-914"> • <i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <div class="social-icon">
+            <h3 class="text-primary">• Connects With Me in Social Media</h3>
+            <p class="text-secondary">Follow Me On This Social Media Apps</p>
+                <a href="https://whatsapp.com/channel/0029VaELLFC5EjxvXWzTNG44">• <i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://www.facebook.com/rohit.nawale.1029?mibextid=mna8qTP8xvtPE1tK">• <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/rohit_nawale___">• <i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://t.me/nr914">• <i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/rohit-nawale-b66107297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">• <i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

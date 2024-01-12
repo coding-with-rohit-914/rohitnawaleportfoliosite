@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    {% include 'navbar.html' %}
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row">
+       <div class="offset-md-4 col-md-4 text-center">
+         <h1 class="text-center a1">• Feedback</h1>
+         <div class="contact-right">
+          <form method="POST">  <!--name="submit-to-google-sheet"> -->
+            <form name="submit-to-google-sheet">
+      {% csrf_token %}
+                 <input type="text" class="form-control" id="Name" name="Name" placeholder="Your Name:" required>
+                 <input type="email" class="form-control" id="Email" name="Email" placeholder="Your Email:" required>
+                 <textarea class="form-control" name="feedback" placeholder="Send Your Feedback..." rows="3"></textarea>
+                 <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </form>
+       <span id="msg"></span>
+       </div>
+      </div>
+     </div>
+   </div>
+
+    <!-- Script For FeedBack -->
+   <!-- <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbxA-KJkKRTtkm4a5660EsWQWwlvJW5UAEX-DN6Zjae5oiSbo3V1oA9PYv1yDuC0DHL3/exec'
+       const form = document.forms['submit-to-google-sheet']
+       const msg = document.getElementById("msg")
+
+       form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           .then(response => {
+               msg.innerHTML = "Message Sent SuccessFully"
+               setTimeout(function(){
+                   msg.innerHTML = ""
+               },5000)
+               form.reset()
+           })
+           .catch(error => console.error('Error!', error.message))
+       })
+   </script> -->
+
+</body>
+</html>
